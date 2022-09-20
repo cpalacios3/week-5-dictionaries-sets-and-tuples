@@ -47,20 +47,27 @@ a,b,c,d = my_tuple
 print(a,b,c,d)
 
 #################################################sets######################################################
-
-
+# sets are similar to tuples. The only difference is that they will not contain
+# or print out any repeated elements
+my_first_set = set((1,2,2,2,3,4,5))
+print(6 in my_first_set)
 # Join the following sets into one, called my_set_3:
 
-{1, 2, "three", "four"}
+set1 = {1, 2, "three", "four"}
 
-{"three", 4, 5}
+set2 = {"three", 4, 5}
 
-
+s3 = set1.union(set2)
+print(s3)
+s3.add(8)
+print(s3)
 # Remove a random item from the following set, using set methods.
 
 raffle = {"Rachel", "Monica", "Phoebe", "Joey", "Chandler", "Ross"}
-
-
+raffle.remove("Rachel")
+print(raffle)
+raffle.add("Rachel")
+print(raffle)
 
 # Add the name Gunther to the following set, using set methods:
 
